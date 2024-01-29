@@ -1,0 +1,690 @@
+/* Read me */
+@font-face {
+    font-family: 'SF Mono';
+    src: url('/fonts/sf-mono-cdnfonts/SFMonoBold.otf');
+    }
+    @font-face {
+        font-family: 'New York Extra Large';
+        src: url('/fonts/new-york-extra-large-cdnfonts/NewYorkExtraLargeBold.otf');
+    }
+    @font-face {
+        font-family: 'New York Small';
+        src: url('/fonts/new-york-extra-large-cdnfonts/NewYorkSmallBold.otf');
+    }
+    @font-face {
+        font-family: 'SF Pro Text';
+        src: url('/fonts/sf-pro-display-cdnfonts/SFPRODISPLAYBOLD.OTF');
+    }
+    @font-face {
+        font-family: 'SF Pro Regular';
+        src: url('/fonts/sf-pro-display-cdnfonts/SFPRODISPLAYREGULAR.OTF');
+    }
+    @font-face {
+        font-family: 'Harriet Text';
+        src: url('/fonts/harriet-text-cdnfonts/HARRIETTEXTBOLD.OTF');
+    }
+    @font-face {
+        font-family: 'Basis Grotesque Pro';
+        src: url('/fonts/BasisGrotesquePROFontFamily/BasisGrotesqueArabicPro-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'Nokia Cellphone FC';
+        src: url('/fonts/nokia-cellphone-fc-cdnfonts/nokiafc22.ttf');
+    }
+    @font-face {
+        font-family: 'Mackay Bold';
+        src: url('/fonts/ReneBieder-MackayDEMO/ReneBieder-MackayDEMOBold.otf');
+    }
+
+header {
+    background-color: #FFD900;
+    height: 350px;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 130px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.subtitle {
+    font-size: 60px;
+    margin: 20px 0 20px 0;
+}
+
+.version {
+    font-family: "SF Mono", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.read_me {
+    font-size: 200px;
+    margin: 0;
+}
+
+.content{
+    width: 80%;
+    margin: 70px auto 100px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 20px;
+    border-left: 6px solid #000;
+    padding: 0 30px;
+    margin-bottom: 60px;
+}
+
+.harriet {
+    font-family: 'Harriet Text';
+}
+
+.grotesque {
+    font-family: 'Basis Grotesque Pro';
+}
+
+.nokia {
+    font-family: 'Nokia Cellphone FC';;
+}
+
+.mackay {
+    font-family: 'Mackay Bold';
+}
+
+/* Nordic rose */
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 20px 40px;
+}
+
+.nav-menu-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 40px 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.show-menu-btn {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 40px 0;
+}
+
+.banner {
+    display: block;
+    margin: auto;
+    padding: 70px;
+    width: 854px;
+    height: 533;
+}
+
+.banner-title {
+    font-family: 'New York Extra Large';
+    width: 858px;
+    height: 162px;
+    font-weight: 700;
+    font-size: 54px;
+    text-align: center;
+}
+
+.banner-description {
+    font-family: 'SF Mono';
+    width: 592px;
+    height: 68px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    border-bottom: 2px solid #000;
+}
+
+.article-title {
+    width: 240px;
+    height: 53px;
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: 44px;
+    text-align: center;
+    margin: auto;
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.article-item{
+    cursor: pointer;
+    flex-basis: 50%;
+    width: 50%;
+    padding: 16px 0px;
+}
+
+.article-image {
+    width: 304px;
+    height: 176px;
+}
+
+.article-description {
+    width: 262px;
+    height: 78px;
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+footer {
+    background-color: #000;
+}
+
+.footer-list {
+    white-space: nowrap;
+    padding: 0 0 90px;
+    overflow: hidden;
+}
+
+.footer-list p:nth-child(odd) {  
+    display: inline-block;
+    color: #FFF;
+    font-family: 'SF Pro Regular';
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer-list p:nth-child(even) {
+    margin: 0 10px;
+    display: inline-block;
+    color: #FFF;
+    font-family: "SF Pro Text";
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo svg{
+    width: 290px;
+    height: 27px;
+}
+
+.footer-logo svg path{
+    fill: white;
+}
+
+.footer-desciption {
+    padding: 30px 0 40px;
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+}
+
+.social-media {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.social-media a{
+    font-family: 'SF Pro Text Regular';
+    display: inline-block;
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid #FFF;
+    margin: 0 20px;
+}
+
+.copy-right{
+    font-family: 'SF Pro Text Regular';
+    margin: auto;
+    padding-bottom: 30px;
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* nordic user */
+
+.user-page-desciption {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.user {
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+    padding: 30px 0;
+    border-top: 2px solid;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-name {
+    font-family: 'SF Pro Text bold';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.user-contact {
+    padding: 10px;
+    border: 2px solid #c2c2c2;
+    border-radius: 5%;
+    text-align: center;
+}
+
+/* .user-social-contact {
+    display: flex;
+} */
+
+.icon-facebook, .icon-twitter, .icon-whatsapp {
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.icon-twitter {
+    border-left: 2px solid #c2c2c2;
+}
+
+.icon-whatsapp {
+    border-left: 2px solid #c2c2c2;
+    display: none;
+}
+
+.blog-content {
+    width: 50%;
+    margin: auto;
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-tittle {
+    width: 50%;
+    margin: auto;
+    font-family: "SF Pro Display";
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+.upload-image {
+    text-align: center;
+}
+
+.blog-image {
+    width: 70%;
+    padding-top: 40px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.image-caption {
+    font-family: 'SF Pro Text regular';
+    font-size: 16px;
+    width: 481px;
+    margin: auto;
+    text-align: center;
+    word-break: break-word;
+    line-height: 140%;
+}
+
+.blog-list {
+    display: flex;
+    align-items: center;
+    width: 53%;
+    margin: auto;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.user-social-contact {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #c2c2c2;
+    border-radius: 2%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.tag {
+    color: #0C0C0C;
+    display: flex;
+    font-family: 'SF Pro Text regular';
+    font-size: 16px;
+    padding: 30px 0;
+    width: 50%;
+    margin: auto;
+}
+
+.tag p{
+    border-bottom: 2px solid #0C0C0C;
+}
+
+.blog-page-break {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    font-size: 12px;
+}
+
+.user-about {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.user-about span{
+    font-family: 'SF Pro Text';
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.eyes-page-break {
+    position: relative;
+    width: 100%;
+    border: 1px solid;
+    margin: 60px 0;
+}
+
+.eyes-page-break svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.art-user-title {
+    width: 50%;
+}
+
+.signup {
+    width: 40%;
+    text-align: center;
+    padding: 50px;
+    border-top:12px solid #000;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+    margin: 30px auto 100px;
+}
+
+.signup-title {
+    font-family: 'New York Extra Large';
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+.signup-description {
+    font-family: 'SF Pro Text';
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+
+.email input {
+    line-height: 50px;
+    font-size: 20px;
+    width: 70%;
+    border: none;
+    padding-left: 16px;
+}
+
+.submit {
+    cursor: pointer;
+    font-family: 'SF Pro Text';
+    font-size: 20px;
+    width: 30%;
+    border: none;
+    background-color: #000;
+    color: white;
+}
+
+.next-page {
+    text-align: center;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+.next-page a{
+    display: inline-block;
+    color: #000;
+    padding: 0 10px;
+}
+
+.previous-page {
+    text-align: center;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+.previous-page a {
+    display: inline-block;
+    color: #000;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 991px) {
+    /* .nav-menu-list {
+        display: none;
+    }
+
+    .show-menu-btn {
+        display: inline-block;
+    }
+
+    /* rose */
+    #nav-bar {
+        padding: 0 20px;
+    }
+
+    .logo{
+        width: 217px;
+        height: 20px;
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .all-articles{
+        width: 90%;
+    }
+
+    .article-title{
+        font-size: 32px;
+    }
+
+    .border{
+        width: 100%;
+    }
+
+    .article-item{
+        text-align: center;
+        width: 100%;
+    }
+
+    .article-description{
+        font-size: 22px;
+        width: 80%;
+    }
+
+    /* user */
+    .body {
+        width: 100%;
+    }
+
+    .contact-descrition {
+        display: none;
+    }
+
+    .user-social-contact {
+        display: inline-block;
+    }
+
+    .icon-whatsapp {
+        display: flex;
+    } */
+
+    header {
+        height: 200px; /* Adjust header height for smaller screens */
+    }
+
+    .header {
+        margin: 0 20px; /* Adjust header margins for smaller screens */
+    }
+
+    .title {
+        font-size: 28px; /* Adjust title font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 40px; /* Adjust subtitle font size for smaller screens */
+    }
+
+    .content {
+        width: 90%; /* Adjust content width for smaller screens */
+    }
+
+    /* Adjustments for navigation */
+    .nav-menu-list {
+        display: none;
+        flex-direction: column; /* Display menu items in a column for smaller screens */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #FFF; /* Background color for the menu */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        z-index: 1;
+    }
+
+    .nav-menu-list.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 20px;
+        border-bottom: 1px solid #d2d2d2;
+        text-align: center;
+    }
+
+    .show-menu-btn {
+        display: inline-block;
+    }
+
+    /* Adjustments for banner */
+    .banner {
+        padding: 40px; /* Adjust padding for smaller screens */
+    }
+
+    .banner-title {
+        font-size: 36px; /* Adjust banner title font size for smaller screens */
+    }
+
+    .banner-description {
+        font-size: 16px; /* Adjust banner description font size for smaller screens */
+    }
+
+    /* Adjustments for articles */
+    .article-title {
+        font-size: 24px; /* Adjust article title font size for smaller screens */
+    }
+
+    .article-description {
+        font-size: 16px; /* Adjust article description font size for smaller screens */
+    }
+
+    .article-item {
+        width: 100%;
+    }
+
+    /* Adjustments for footer */
+    .footer-list p {
+        font-size: 16px; /* Adjust footer text font size for smaller screens */
+    }
+
+    .footer-logo svg {
+        width: 200px; /* Adjust footer logo size for smaller screens */
+    }
+
+    .footer-desciption {
+        width: 80%; /* Adjust footer description width for smaller screens */
+    }
+
+    .social-media a {
+        font-size: 12px; /* Adjust social media link font size for smaller screens */
+    }
+
+    .copy-right {
+        font-size: 10px; /* Adjust copyright text font size for smaller screens */
+    }
+}
