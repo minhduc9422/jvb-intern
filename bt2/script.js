@@ -1,5 +1,6 @@
 const date = new Date();
 
+// calendar rendering functions
 const renderCalendar = () => {
   date.setDate(1);
 
@@ -70,6 +71,7 @@ const renderCalendar = () => {
   monthDays.innerHTML = days;
 };
 
+// return to current date
 const handleDayClick = (clickedDay) => {
   const currentDay = new Date().getDate();
   const currentMonth = new Date().getMonth();
@@ -88,6 +90,7 @@ document.querySelector(".date p").addEventListener("click", () => {
   renderCalendar();
 });
 
+// previous and next month
 document.querySelector(".prev").addEventListener("click", () => {
   date.setMonth(date.getMonth() - 1);
   renderCalendar();
@@ -98,6 +101,7 @@ document.querySelector(".next").addEventListener("click", () => {
   renderCalendar();
 });
 
+// scoll event
 document.querySelector(".calendar").addEventListener("wheel", (event) => {
   if (event.deltaY < 0) {
     date.setMonth(date.getMonth() - 1);
@@ -107,7 +111,7 @@ document.querySelector(".calendar").addEventListener("wheel", (event) => {
   renderCalendar();
 });
 
-// Add this function to handle the year selection and close the pop-up
+// year and month choosing popup menu
 function selectYear() {
   const selectedYear = document.getElementById("year-input").value;
   date.setFullYear(selectedYear);
@@ -115,7 +119,6 @@ function selectYear() {
   closeYearPopup();
 }
 
-// Add this function to handle the month selection and close the pop-up
 function selectMonth() {
   const selectedMonth = document.getElementById("month-select").value;
   date.setMonth(selectedMonth);
@@ -123,27 +126,22 @@ function selectMonth() {
   closeMonthPopup();
 }
 
-// Add this function to open the year picker pop-up
 function openYearPopup() {
   document.querySelector(".year-popup").style.display = "block";
 }
 
-// Add this function to close the year picker pop-up
 function closeYearPopup() {
   document.querySelector(".year-popup").style.display = "none";
 }
 
-// Add this function to open the month picker pop-up
 function openMonthPopup() {
   document.querySelector(".month-popup").style.display = "block";
 }
 
-// Add this function to close the month picker pop-up
 function closeMonthPopup() {
   document.querySelector(".month-popup").style.display = "none";
 }
 
-// Modify the click event listener on the <p> tag
 document.querySelector(".date h1").addEventListener("click", () => {
   openYearPopup();
 });
@@ -152,7 +150,6 @@ document.querySelector(".date .select-year").addEventListener("click", () => {
   openMonthPopup();
 });
 
-// Add this event listener to close the pop-up when clicking outside it
 document.addEventListener("click", (event) => {
   if (!event.target.closest('.year-popup') && !event.target.closest('.month-popup') && event.target !== document.querySelector('.date h1')) {
     closeMonthPopup();

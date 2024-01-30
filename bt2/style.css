@@ -62,7 +62,6 @@ h1:hover, p:hover {
   cursor: pointer;
 }
 
-/* Add styling for the month picker pop-up */
 .month-popup {
   display: none;
   position: fixed;
@@ -88,7 +87,6 @@ h1:hover, p:hover {
   margin-right: 8px;
 }
 
-/* Add styling for the year picker pop-up */
 .year-popup {
   display: none;
   position: fixed;
@@ -122,7 +120,6 @@ button {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-/*  */
 
 .weekdays {
   width: 100%;
