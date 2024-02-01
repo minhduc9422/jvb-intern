@@ -17,10 +17,17 @@
 
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/reponsive.css" />
   </head>
   <body>
     <!-- nav bar -->
     <div id="nav-bar">
+      <div class="next-page">
+        <a href="nordic_user.html"><i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div class="previous-page">
+        <a href="read_me.html"><i class="fas fa-chevron-left"></i></a>
+      </div>
       <div class="logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -79,27 +86,39 @@
         <a class="nav-item" href="#project">PROJECTS</a>
       </div>
 
-      <button class="show-menu-btn"><i class="fas fa-bars"></i></button>
+      <button class="show-menu-btn">
+        <svg
+          width="24"
+          height="15"
+          viewBox="0 0 24 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="0.5" x2="24" y2="0.5" stroke="black" />
+          <line y1="7.5" x2="24" y2="7.5" stroke="black" />
+          <line y1="14.5" x2="24" y2="14.5" stroke="black" />
+        </svg>
+      </button>
     </div>
     <!-- main -->
     <div class="main">
       <div class="body">
-        <div class="banner">
-          <img class="banner-image" src="./images/image 2.png" alt="banner" />
+        <img class="banner-image" src="./images/image 2.png" alt="banner" />
 
-          <div class="banner-content">
-            <p class="banner-title">
-              A few words about this blog platform, Ghost, and how this site was
-              made
-            </p>
-            <p class="banner-description">
-              Why Ghost (& Figma) instead of Medium, WordPress or other options?
-            </p>
-          </div>
+        <div class="banner-content">
+          <p class="banner-title">
+            A few words about this blog platform, Ghost, and how this site was
+            made
+          </p>
+          <p class="banner-description">
+            Why Ghost (& Figma) instead of Medium, WordPress or other options?
+          </p>
         </div>
 
+        <div class="page-break"></div>
+
         <div class="all-articles">
-          <p class="article-title">All Articles</p>
+          <p class="article-title">All articles</p>
 
           <div class="article-list">
             <div class="article-item">
@@ -163,7 +182,7 @@
                 It’s all about finding the perfect balance
               </p>
             </div>
-            <div class="article-item">
+            <div class="article-item mobile">
               <img
                 class="article-image"
                 src="./images/Rectangle 12_2.png"
@@ -173,7 +192,7 @@
                 I believe learning is the most important skill
               </p>
             </div>
-            <div class="article-item">
+            <div class="article-item mobile">
               <img
                 class="article-image"
                 src="./images/Rectangle 13_2.png"
@@ -181,7 +200,7 @@
               />
               <p class="article-description">Clients are part of the team</p>
             </div>
-            <div class="article-item">
+            <div class="article-item mobile">
               <img
                 class="article-image"
                 src="./images/Rectangle 19.png"
@@ -189,7 +208,7 @@
               />
               <p class="article-description">Clients are part of the team</p>
             </div>
-            <div class="article-item">
+            <div class="article-item mobile">
               <img
                 class="article-image"
                 src="./images/Rectangle 17.png"
@@ -199,7 +218,7 @@
                 Here are some things you should know regarding how we work
               </p>
             </div>
-            <div class="article-item">
+            <div class="article-item mobile">
               <img
                 class="article-image"
                 src="./images/Rectangle 16.png"
@@ -209,7 +228,7 @@
                 Connecting artificial intelligence with digital product design
               </p>
             </div>
-            <div class="article-item">
+            <div class="article-item mobile">
               <img
                 class="article-image"
                 src="./images/Rectangle 18.png"
@@ -287,9 +306,9 @@
           </svg>
         </div>
         <div class="footer-desciption">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          incidunt numquam quibusdam totam ipsam. Porro, vero eligendi rerum
-          itaque ea temporibus! Officia quasi iure omnis quisquam beatae?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit
+          tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+          a nunc eget ligula suscipit finibus.
         </div>
         <div class="social-media">
           <a href="#twiter">Twitter</a>
@@ -301,12 +320,6 @@
           All rights reserved.
         </div>
       </footer>
-      <div class="next-page">
-        <a href="nordic_user.html"><i class="fas fa-chevron-right"></i></a>
-      </div>
-      <div class="previous-page">
-        <a href="read_me.html"><i class="fas fa-chevron-left"></i></a>
-      </div>
     </div>
   </body>
 </html>

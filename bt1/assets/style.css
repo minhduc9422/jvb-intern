@@ -1,41 +1,49 @@
-/* Read me */
 @font-face {
     font-family: 'SF Mono';
-    src: url('/fonts/sf-mono-cdnfonts/SFMonoBold.otf');
-    }
-    @font-face {
-        font-family: 'New York Extra Large';
-        src: url('/fonts/new-york-extra-large-cdnfonts/NewYorkExtraLargeBold.otf');
-    }
-    @font-face {
-        font-family: 'New York Small';
-        src: url('/fonts/new-york-extra-large-cdnfonts/NewYorkSmallBold.otf');
-    }
-    @font-face {
-        font-family: 'SF Pro Text';
-        src: url('/fonts/sf-pro-display-cdnfonts/SFPRODISPLAYBOLD.OTF');
-    }
-    @font-face {
-        font-family: 'SF Pro Regular';
-        src: url('/fonts/sf-pro-display-cdnfonts/SFPRODISPLAYREGULAR.OTF');
-    }
-    @font-face {
-        font-family: 'Harriet Text';
-        src: url('/fonts/harriet-text-cdnfonts/HARRIETTEXTBOLD.OTF');
-    }
-    @font-face {
-        font-family: 'Basis Grotesque Pro';
-        src: url('/fonts/BasisGrotesquePROFontFamily/BasisGrotesqueArabicPro-Bold.ttf');
-    }
-    @font-face {
-        font-family: 'Nokia Cellphone FC';
-        src: url('/fonts/nokia-cellphone-fc-cdnfonts/nokiafc22.ttf');
-    }
-    @font-face {
-        font-family: 'Mackay Bold';
-        src: url('/fonts/ReneBieder-MackayDEMO/ReneBieder-MackayDEMOBold.otf');
-    }
+    src: url(../fonts/SF-Mono-Font-master/SFMono-Light.otf) format('truetype');
+}
+@font-face {
+    font-family: 'New York Extra Large';
+    src: url(../fonts/new-york-extra-large-cufonfonts/NewYorkExtraLargeBold.otf) format('truetype');
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url(../fonts/San-Francisco-Pro-Fonts-master/SF-Pro-Text-Light.otf) format('truetype');
+}
+@font-face {
+    font-family: 'Mackay Bold';
+    src: url(../fonts/Mackay/MackayBold.otf) format('truetype');
+}
+@font-face {
+    font-family: 'Harriet Text';
+    src: url(../fonts/harriet-text-cufonfonts/HARRIETTEXTLIGHT.OTF) format('truetype');
+}
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: url(../fonts/BasisGrotesquePROFontFamily/BasisGrotesqueArabicPro-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Nokia Cellphone FC';
+    src: url(../fonts/nokia_cellphone/nokiafc22.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'New York Small';
+    src: url(../fonts/new-york-extra-large-cufonfonts/NewYorkSmallRegular.otf) format('truetype');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/San-Francisco-Pro-Fonts-master/SF-Pro-Display-Medium.otf) format('truetype');
+}
+@font-face {
+    font-family: 'SF Pro Text Bold';
+    src: url(../fonts/San-Francisco-Pro-Fonts-master/SF-Pro-Text-Bold.otf) format('truetype');
+}
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url(../fonts/San-Francisco-Pro-Fonts-master/SF-Pro-Text-Regular.otf) format('truetype');
+}
 
+/* Read me */
 header {
     background-color: #FFD900;
     height: 350px;
@@ -43,17 +51,11 @@ header {
 }
 
 .header {
-    width: 100%;
+    width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0 130px;
-}
-
-.title {
-    font-weight: 700;
-    font-size: 44px;
 }
 
 .subtitle {
@@ -62,7 +64,7 @@ header {
 }
 
 .version {
-    font-family: "SF Mono", sans-serif;
+    font-family: "SF Mono";
     font-weight: 400;
     font-size: 20px;
     margin: 0;
@@ -70,7 +72,12 @@ header {
 
 .read_me {
     font-size: 200px;
+    font-weight: 700;
     margin: 0;
+}
+
+.title {
+    font-family: 'New York Extra Large';
 }
 
 .content{
@@ -79,6 +86,7 @@ header {
 }
 
 .description {
+    font-family: 'SF Pro Text';
     font-weight: 400;
     font-size: 20px;
     border-left: 6px solid #000;
@@ -109,7 +117,14 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #d2d2d2;
-    padding: 20px 40px;
+    height: 133px;
+}
+
+.logo svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 61px;
 }
 
 .nav-menu-list {
@@ -117,15 +132,22 @@ header {
     justify-content: flex-end;
     align-items: center;
     gap: 30px;
+    height: 100%;
+    margin-right: 61px;
 }
 
 .nav-item {
+    font-family: 'New York Small';
     cursor: pointer;
     font-size: 20px;
-    font-weight: 700;
-    padding: 40px 0;
+    font-weight: 300;
+    padding: 55px 0;
     color: #000;
     text-decoration: none;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #000;
 }
 
 .show-menu-btn {
@@ -133,74 +155,100 @@ header {
     cursor: pointer;
     background: none;
     border: none;
-    padding: 40px 0;
+    padding-right: 20px;
 }
 
-.banner {
+.body {
+    padding-top: 77px;
+    margin: 0 auto;
+}
+
+.banner-image {
     display: block;
     margin: auto;
-    padding: 70px;
     width: 854px;
     height: 533;
 }
 
 .banner-title {
-    font-family: 'New York Extra Large';
-    width: 858px;
-    height: 162px;
-    font-weight: 700;
-    font-size: 54px;
+    color: #000;
     text-align: center;
+    font-family: "New York Extra Large";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 54px */
+    width: 858px;
+    margin: 40px auto 32px;
 }
 
 .banner-description {
-    font-family: 'SF Mono';
-    width: 592px;
-    height: 68px;
-    font-weight: 400;
-    font-size: 20px;
+    color: #000;
     text-align: center;
+    font-family: "SF Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 34px */
+    width: 592px;
     margin: auto;
-    border-bottom: 2px solid #000;
+    padding-bottom: 34px;
+}
+
+.page-break {
+    width: 640px;
+    height: 2px;
+    background-color: #000;
+    margin: auto;
+}
+
+.all-articles {
+    padding-top: 64px;
+    margin: auto;
+    width: 636px;
 }
 
 .article-title {
-    width: 240px;
-    height: 53px;
-    font-family: 'New York Extra Large';
-    font-weight: 700;
-    font-size: 44px;
+    color: #000;
     text-align: center;
-    margin: auto;
+    font-family: "New York Extra Large";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 auto 39px;
 }
 
 .article-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 40px 0;
-    text-align: center;
+    justify-content: center;
+    gap: 26px;
+    margin-bottom: 100px;
 }
 
 .article-item{
     cursor: pointer;
-    flex-basis: 50%;
-    width: 50%;
-    padding: 16px 0px;
+    width: 304px;
+    margin-bottom: 38px;
 }
 
 .article-image {
-    width: 304px;
+    width: 100%;
     height: 176px;
 }
 
 .article-description {
     width: 262px;
     height: 78px;
-    font-family: 'SF Pro Text';
-    font-weight: 500;
-    font-size: 20px;
+    color: #000;
     text-align: center;
-    margin: auto;
+    font-family: "SF Pro Display";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 26.4px */
+    margin: 20px auto 0;
 }
 
 footer {
@@ -213,21 +261,31 @@ footer {
     overflow: hidden;
 }
 
-.footer-list p:nth-child(odd) {  
+.footer-list p {
+    margin: 18px 0;
+}
+
+.footer-list p:nth-child(even) {  
+    margin: 0 16px;
     display: inline-block;
     color: #FFF;
-    font-family: 'SF Pro Regular';
+    font-family: "SF Pro Text Regular";
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.footer-list p:nth-child(even) {
-    margin: 0 10px;
+.footer-list p:nth-child(odd) {
     display: inline-block;
     color: #FFF;
-    font-family: "SF Pro Text";
+    font-family: "SF Pro Text Bold";
     font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px; /* 140% */
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -247,26 +305,32 @@ footer {
 }
 
 .footer-desciption {
-    padding: 30px 0 40px;
+    padding: 30px 0 32px;
+    font-family: "New York Small";
     text-align: center;
-    width: 35%;
+    width: 488px;
     margin: auto;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    font-style: normal;
 }
 
 .social-media {
     margin: auto;
     display: flex;
     justify-content: center;
-    padding-bottom: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 64px;
 }
 
 .social-media a{
     font-family: 'SF Pro Text Regular';
     display: inline-block;
     color: #FFF;
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     cursor: pointer;
     border-bottom: 1px solid #FFF;
@@ -284,110 +348,161 @@ footer {
 
 /* nordic user */
 
-.user-page-desciption {
-    border: none;
-    margin-bottom: 30px;
+.banner-title.user-page-title {
+    padding-top: 53px;
+    margin: 0 auto 32px;
+}
+
+.banner-description.user-page-desciption {
+    width: 626px;
+    padding-bottom: 52px;
+}
+
+.user-page-banner {
+    width: 100%;
+    height: 100%;
+}
+
+.page-break.user-page {
+    margin-top: 32px;
 }
 
 .user {
-    width: 50%;
+    width: 640px;
     justify-content: space-between;
     display: flex;
-    padding: 30px 0;
-    border-top: 2px solid;
-    margin: 30px auto;
+    padding: 24px 0 52px;
+    margin: 0 auto 0;
     align-items: center;
+}
+
+.user-profile-image {
+    width: 57px;
+    height: 57px;
 }
 
 .user-profile {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
 }
 
 .user-name {
-    font-family: 'SF Pro Text bold';
+    color: #000;
+    font-family: "SF Pro Text";
     font-size: 16px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
+    margin: 4px 0;
+}
+
+.upload-date {
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 4px 0;
 }
 
 
 .user-contact {
-    padding: 10px;
-    border: 2px solid #c2c2c2;
-    border-radius: 5%;
-    text-align: center;
+    width: 140px;
+    height: 44px;
+    display: flex;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
-/* .user-social-contact {
+.icon {
+    color: #000;
     display: flex;
-} */
-
-.icon-facebook, .icon-twitter, .icon-whatsapp {
     align-items: center;
     height: 100%;
     padding: 0 20px;
+    margin: auto;
+    justify-content: center;
     text-decoration: none;
-    color: #000;
 }
 
-.icon-twitter {
-    border-left: 2px solid #c2c2c2;
+.icon-divider {
+    border-right: 1px solid #EAEAEA;
 }
 
-.icon-whatsapp {
-    border-left: 2px solid #c2c2c2;
+.icon.whatsapp, .icon-divider.whatsapp {
     display: none;
 }
 
 .blog-content {
-    width: 50%;
-    margin: auto;
-    padding-top: 40px;
+    width: 640px;
+    margin: 0 auto 36px;
+    color: #000;
+    font-family: "New York Medium";
     font-size: 20px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 170%; /* 34px */
 }
 
 .blog-tittle {
-    width: 50%;
-    margin: auto;
+    width: 640px;
+    color: #000;
     font-family: "SF Pro Display";
     font-size: 32px;
+    font-style: normal;
     font-weight: 700;
-    padding-top: 60px;
-}
-
-.upload-image {
-    text-align: center;
+    line-height: 160%; /* 51.2px */
+    margin: auto;
+    padding: 21px 0 24px;
 }
 
 .blog-image {
-    width: 70%;
-    padding-top: 40px;
-    padding-bottom: 16px;
-    text-align: center;
+    width: 854px;
+    height: 570px;
+    padding: 16px 0 12px;
+    margin: auto;
+    display: block;
 }
 
 .image-caption {
-    font-family: 'SF Pro Text regular';
-    font-size: 16px;
     width: 481px;
-    margin: auto;
     text-align: center;
-    word-break: break-word;
-    line-height: 140%;
+    margin: 0 auto 52px;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
 }
 
 .blog-list {
-    display: flex;
-    align-items: center;
-    width: 53%;
-    margin: auto;
-    padding-top: 25px;
+    width: 588px;
+    font-family: "New York Medium";
     font-size: 20px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 170%;
+    line-height: 170%; /* 34px */
+    margin: 0 auto 52px;
+    padding: 0;
+}
+
+.blog-content.list {
+    margin: 0 auto 19px;
+    padding-top: 16px;
+}
+
+.blog-content.last {
+    margin-bottom: 52px;
+}
+
+.blog-list li {
+    padding-top: 20px;
 }
 
 .user-social-contact {
@@ -399,18 +514,49 @@ footer {
     text-align: center;
 }
 
-.tag {
+.tags {
+    width: 640px;
     color: #0C0C0C;
     display: flex;
-    font-family: 'SF Pro Text regular';
+    font-family: "SF Pro Text";
     font-size: 16px;
-    padding: 30px 0;
-    width: 50%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    padding: 0 0 34px;
     margin: auto;
 }
 
-.tag p{
+.tags p {
+    font-family: 'Basis Grotesque Pro';
     border-bottom: 2px solid #0C0C0C;
+    margin: 0;
+}
+
+.user-contact.end-blog {
+    width: 640px;
+    height: 64px;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.icon.share {
+    justify-content: center;
+    gap: 16px;
+}
+
+.share p {
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 25.6px */
+}
+
+.share-title {
+    display: none;
 }
 
 .blog-page-break {
@@ -422,25 +568,35 @@ footer {
 }
 
 .user-about {
+    color: #0C0C0C;
+    font-family: "New York Small";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    width: 640px;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    width: 50%;
+    align-items: center;
+    gap: 24px;
+    padding: 36px 0 132px;
     margin: auto;
 }
 
 .user-about span{
-    font-family: 'SF Pro Text';
-    color: #000;
-    text-transform: uppercase;
+    color: #0C0C0C;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }
 
 .eyes-page-break {
     position: relative;
     width: 100%;
     border: 1px solid;
-    margin: 60px 0;
 }
 
 .eyes-page-break svg {
@@ -450,52 +606,82 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-.art-user-title {
-    width: 50%;
+.all-articles.articles-user-page {
+    width: 968px;
+    padding: 73px 0 0;
+}
+
+.article-title.user-title {
+    margin-bottom: 27px;
+}
+
+.article-list.user-page {
+    gap: 28px;
+}
+
+.article-item.articles-user-page {
+    margin-bottom: 8px;
+}
+
+.article-image.user-page {
+    width: 304px;
+    height: 176px;
 }
 
 .signup {
-    width: 40%;
+    width: 640px;
+    height: 265px;
     text-align: center;
-    padding: 50px;
-    border-top:12px solid #000;
+    border-top:13px solid #000;
     border-left:1px solid #000;
     border-right:1px solid #000;
     border-bottom:1px solid #000;
-    margin: 30px auto 100px;
+    margin: 100px auto;
+    padding: 52px 61px;
 }
 
 .signup-title {
-    font-family: 'New York Extra Large';
+    color: #090909;
+    text-align: center;
+    font-family: "New York Extra Large";
     font-size: 36px;
+    font-style: normal;
     font-weight: 700;
-    color: #000;
+    line-height: 28px; /* 77.778% */
+    padding: 62px 0 18px;
+    margin: 0;
 }
 
 .signup-description {
-    font-family: 'SF Pro Text';
+    color: #090909;
+    text-align: center;
+    font-family: "SF Pro Text";
     font-size: 20px;
-    color: #000;
-    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+    padding-bottom: 36px;
+    margin: auto;
 }
 
-.email {
+.email{
     display: flex;
     justify-content: space-between;
     border: 1px solid #000;
+    margin: 0 auto;
 }
 
-.email input {
+.email input{
     line-height: 50px;
     font-size: 20px;
+    outline: none;
     width: 70%;
     border: none;
     padding-left: 16px;
 }
-
-.submit {
+.submit{
     cursor: pointer;
-    font-family: 'SF Pro Text';
+    font-family: 'SF Pro Text bold';
     font-size: 20px;
     width: 30%;
     border: none;
@@ -528,163 +714,3 @@ footer {
     padding: 0 10px;
 }
 
-@media screen and (max-width: 991px) {
-    /* .nav-menu-list {
-        display: none;
-    }
-
-    .show-menu-btn {
-        display: inline-block;
-    }
-
-    /* rose */
-    #nav-bar {
-        padding: 0 20px;
-    }
-
-    .logo{
-        width: 217px;
-        height: 20px;
-    }
-
-    .body {
-        width: 100%;
-    }
-
-    .banner-image {
-        width: 100%;
-    }
-
-    .all-articles{
-        width: 90%;
-    }
-
-    .article-title{
-        font-size: 32px;
-    }
-
-    .border{
-        width: 100%;
-    }
-
-    .article-item{
-        text-align: center;
-        width: 100%;
-    }
-
-    .article-description{
-        font-size: 22px;
-        width: 80%;
-    }
-
-    /* user */
-    .body {
-        width: 100%;
-    }
-
-    .contact-descrition {
-        display: none;
-    }
-
-    .user-social-contact {
-        display: inline-block;
-    }
-
-    .icon-whatsapp {
-        display: flex;
-    } */
-
-    header {
-        height: 200px; /* Adjust header height for smaller screens */
-    }
-
-    .header {
-        margin: 0 20px; /* Adjust header margins for smaller screens */
-    }
-
-    .title {
-        font-size: 28px; /* Adjust title font size for smaller screens */
-    }
-
-    .subtitle {
-        font-size: 40px; /* Adjust subtitle font size for smaller screens */
-    }
-
-    .content {
-        width: 90%; /* Adjust content width for smaller screens */
-    }
-
-    /* Adjustments for navigation */
-    .nav-menu-list {
-        display: none;
-        flex-direction: column; /* Display menu items in a column for smaller screens */
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #FFF; /* Background color for the menu */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-        z-index: 1;
-    }
-
-    .nav-menu-list.active {
-        display: flex;
-    }
-
-    .nav-item {
-        padding: 20px;
-        border-bottom: 1px solid #d2d2d2;
-        text-align: center;
-    }
-
-    .show-menu-btn {
-        display: inline-block;
-    }
-
-    /* Adjustments for banner */
-    .banner {
-        padding: 40px; /* Adjust padding for smaller screens */
-    }
-
-    .banner-title {
-        font-size: 36px; /* Adjust banner title font size for smaller screens */
-    }
-
-    .banner-description {
-        font-size: 16px; /* Adjust banner description font size for smaller screens */
-    }
-
-    /* Adjustments for articles */
-    .article-title {
-        font-size: 24px; /* Adjust article title font size for smaller screens */
-    }
-
-    .article-description {
-        font-size: 16px; /* Adjust article description font size for smaller screens */
-    }
-
-    .article-item {
-        width: 100%;
-    }
-
-    /* Adjustments for footer */
-    .footer-list p {
-        font-size: 16px; /* Adjust footer text font size for smaller screens */
-    }
-
-    .footer-logo svg {
-        width: 200px; /* Adjust footer logo size for smaller screens */
-    }
-
-    .footer-desciption {
-        width: 80%; /* Adjust footer description width for smaller screens */
-    }
-
-    .social-media a {
-        font-size: 12px; /* Adjust social media link font size for smaller screens */
-    }
-
-    .copy-right {
-        font-size: 10px; /* Adjust copyright text font size for smaller screens */
-    }
-}

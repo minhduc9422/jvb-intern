@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/reponsive.css">
   </head>
   <body>
     <!-- nav bar -->
@@ -79,13 +80,25 @@
         <a class="nav-item" href="#project">PROJECTS</a>
       </div>
 
-      <button class="show-menu-btn"><i class="fas fa-bars"></i></button>
+      <button class="show-menu-btn">
+        <svg
+          width="24"
+          height="15"
+          viewBox="0 0 24 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="0.5" x2="24" y2="0.5" stroke="black" />
+          <line y1="7.5" x2="24" y2="7.5" stroke="black" />
+          <line y1="14.5" x2="24" y2="14.5" stroke="black" />
+        </svg>
+      </button>
     </div>
     <!-- main -->
-    <div class="main">
+    <div class="main user-page">
       <div class="banner">
         <div class="banner-content">
-          <p class="banner-title">
+          <p class="banner-title user-page-title">
             A few words about this blog platform, Ghost, and how this site was
             made
           </p>
@@ -94,10 +107,11 @@
           </p>
         </div>
 
-        <img class="user-page-banner" src="./images/image 2.png" alt="" />
+        <img class="banner-image user-page-banner" src="./images/image 2.png" alt="" />
       </div>
 
-      <div class="blog">
+      <div class="page-break user-page"></div>
+
         <div class="user">
           <div class="user-profile">
             <img
@@ -107,17 +121,19 @@
             />
             <div class="user-info">
               <p class="user-name">Mika Matikainen</p>
-              <p>Apr 15, 2020 · 4 min read</p>
+              <p class="upload-date">Apr 15, 2020 · 4 min read</p>
             </div>
           </div>
           <div class="user-contact">
-            <a class="icon-facebook" href="#facebook"
+            <a class="icon facebook" href="#facebook"
               ><i class="fab fa-facebook"></i
             ></a>
-            <a class="icon-twitter" href="#twitter"
+            <div class="icon-divider"></div>
+            <a class="icon twitter" href="#twitter"
               ><i class="fab fa-twitter"></i
             ></a>
-            <a class="icon-whatsapp" href="#whatsapp"
+            <div class="icon-divider whatsapp"></div>
+            <a class="icon whatsapp" href="#whatsapp"
               ><i class="fab fa-whatsapp"></i
             ></a>
           </div>
@@ -144,13 +160,11 @@
           Morbi efficitur auctor metus, id mollis lorem pellentesque id. Nullam
           posuere maximus dui et fringilla.
         </div>
-        <div class="upload-image">
           <img class="blog-image" src="./images/Rectangle 8.png" alt="" />
           <div class="image-caption">
             Image caption centered this way and I’ll make this a bit longer to
             indicate the amount of line-height.
           </div>
-        </div>
         <div class="blog-content">
           Aenean pharetra quis lacus at viverra. Class aptent taciti sociosqu ad
           litora torquent per conubia nostra, per inceptos himenaeos. Aliquam
@@ -162,39 +176,46 @@
           Morbi efficitur auctor metus, id mollis lorem pellentesque id. Nullam
           posuere maximus dui et fringilla. Nulla non volutpat leo.
         </div>
-        <div class="blog-content">A list looks like this:</div>
-        <div class="blog-list">
-          <ul>
-            <li>First item in the list</li>
-            <li>
-              Second item in the list lorem ipsum dolor sit amet nunc felis
-              dolor lorem ipsum sit amet
-            </li>
-            <li>Third item in the list</li>
-          </ul>
+        <div class="mobile">
+          <div class="blog-content list">A list looks like this:</div>
+            <ul class="blog-list">
+              <li>First item in the list</li>
+              <li>
+                Second item in the list lorem ipsum dolor sit amet nunc felis
+                dolor lorem ipsum sit amet
+              </li>
+              <li>Third item in the list</li>
+            </ul>
+          <div class="blog-content last">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Aliquam quis posuere ligula.
+          </div>
+          <div class="blog-content">
+            Thanks for reading,<br />
+            Mika
+          </div>
         </div>
-        <div class="blog-content">
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos. Aliquam quis posuere ligula.
+        <div class="share">
+          <p class="share-title">Share:</p>
+          <div class="user-contact end-blog">
+            <a class="icon share facebook" href="#facebook"
+              ><i class="fab fa-facebook"></i>
+              <p class="share-description">Share on Facebook</p></a
+            >
+            <div class="icon-divider"></div>
+            <a class="icon share twitter" href="#twitter"
+              ><i class="fab fa-twitter"></i>
+              <p class="share-description">Share on Twitter</p></a
+            >
+            <div class="icon-divider whatsapp"></div>
+            <a class="icon share whatsapp" href="#whatsapp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
         </div>
-        <div class="blog-content">
-          Thanks for reading,<br />
-          Mika
+        <div class="tags">
+            Tags:&nbsp;<p>product design</p>,&nbsp;<p> culture</p>
         </div>
-        <div class="user-social-contact">
-          <a class="icon-facebook" href="#facebook"
-            ><i class="fab fa-facebook"></i>
-            <span class="contact-descrition">Share on Facebook</span></a
-          >
-          <a class="icon-twitter" href="#twitter"
-            ><i class="fab fa-twitter"></i>
-            <span class="contact-descrition">Share on Twitter</span></a
-          >
-          <a class="icon-whatsapp" href="#whatsapp"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
-        </div>
-        <div class="tag">Tags: product design, culture</div>
         <div class="blog-page-break">
           . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
           . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -253,59 +274,59 @@
       </div>
 
       <div class="all-articles articles-user-page">
-        <p class="article-title art-user-title">What to read next</p>
+        <p class="article-title user-title">What to read next</p>
 
-        <div class="article-list">
+        <div class="article-list user-page">
           <div class="article-item articles-user-page">
-            <img class="article-image" src="./images/Rectangle 4.png" alt="" />
+            <img class="article-image user-page" src="./images/Rectangle 4.png" alt="" />
             <p class="article-description">
               Connecting artificial intelligence with digital product design
             </p>
           </div>
           <div class="article-item articles-user-page">
-            <img class="article-image" src="./images/Rectangle 11.png" alt="" />
+            <img class="article-image user-page" src="./images/Rectangle 11.png" alt="" />
             <p class="article-description">
               Hello world, or, in other words, why this blog exists
             </p>
           </div>
           <div class="article-item articles-user-page">
-            <img class="article-image" src="./images/Rectangle 10.png" alt="" />
+            <img class="article-image user-page" src="./images/Rectangle 10.png" alt="" />
             <p class="article-description">
               Here are some things you should know regarding how we work
             </p>
           </div>
-          <div class="article-item articles-user-page">
-            <img class="article-image" src="./images/Rectangle 37.png" alt="" />
+          <div class="article-item articles-user-page mobile">
+            <img class="article-image user-page" src="./images/Rectangle 37.png" alt="" />
             <p class="article-description">
               A few words about this blog platform, Ghost, and how this site was
               made
             </p>
           </div>
-          <div class="article-item articles-user-page">
-            <img class="article-image" src="./images/Rectangle 39.png" alt="" />
+          <div class="article-item articles-user-page mobile">
+            <img class="article-image user-page" src="./images/Rectangle 39.png" alt="" />
             <p class="article-description">
               Updating list of 50+ sources on distributed teams, remote work,
               and how to make it all work better
             </p>
           </div>
-          <div class="article-item articles-user-page">
-            <img class="article-image" src="./images/Rectangle 38.png" alt="" />
+          <div class="article-item articles-user-page mobile">
+            <img class="article-image user-page" src="./images/Rectangle 38.png" alt="" />
             <p class="article-description">
               How modern remote working tools get along with Old School Cowboy's
               methods
             </p>
           </div>
         </div>
-        <div class="signup">
-          <p class="signup-title">Sign up for the newsletter</p>
-          <p class="signup-description">
-            If you want relevant updates occasionally, sign up for the private
-            newsletter. Your email is never shared.
-          </p>
-          <div class="email">
-            <input type="text" placeholder="Enter your email..." />
-            <button class="submit">Sign up</button>
-          </div>
+      </div>
+      <div class="signup">
+        <p class="signup-title">Sign up for the newsletter</p>
+        <p class="signup-description">
+          If you want relevant updates occasionally, sign up for the private
+          newsletter. Your email is never shared.
+        </p>
+        <div class="email">
+          <input type="text" placeholder="Enter your email..." />
+          <button class="submit">Sign up</button>
         </div>
       </div>
 
@@ -372,9 +393,9 @@
           </svg>
         </div>
         <div class="footer-desciption">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          incidunt numquam quibusdam totam ipsam. Porro, vero eligendi rerum
-          itaque ea temporibus! Officia quasi iure omnis quisquam beatae?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu 
+          velit tempus erat egestas efficitur. In hac habitasse platea 
+          dictumst. Fusce a nunc eget ligula suscipit finibus. 
         </div>
         <div class="social-media">
           <a href="#twiter">Twitter</a>

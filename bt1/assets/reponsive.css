@@ -1,0 +1,230 @@
+@media screen and (max-width: 991px) {
+
+    .nav-menu-list {
+        display: none;
+        flex-direction: column; 
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #FFF; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        z-index: 1;
+    }
+
+    .nav-menu-list.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 20px;
+        border-bottom: 1px solid #d2d2d2;
+        text-align: center;
+    }
+
+    .show-menu-btn {
+        display: inline-block;
+    }
+
+    .main.user-page {
+        width: 375px;
+        margin: auto;
+    }
+
+    .banner-title,
+    .banner-description,
+    .banner-title.user-page-title,
+    .blog-page-break,
+    .page-break,
+    .page-break.user-page {
+        width: 335px;
+    }    
+
+    .logo {
+        width: 217px;
+        height: 20px;
+    }
+
+    .logo svg {
+        margin-left: 20px;
+    }
+
+    /* rose */
+    #nav-bar {
+        width: 375px;
+        height: 65px;
+        margin: auto;
+    }
+
+    .banner-image {
+        width: 375px;
+    }
+
+    .banner-title {
+        font-family: "New York Extra Large";
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .banner-description {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .article-title {
+        font-size: 32px;
+    }
+
+    .article-item {
+        text-align: center;
+        width: 335px;
+        margin: 0;
+    }
+
+    .article-description {
+        width: 270px;
+    }
+
+    .footer-logo svg {
+        width: 236px;
+        height: 22px;
+    }
+
+    .footer-desciption {
+        font-size: 16px;
+        width: 287px;
+    }
+
+    /* user */
+    .banner-description.user-page-desciption {
+        width: 335px;
+    }
+
+    .user-page-banner {
+        width: 375px;
+    }
+
+    .user {
+        width: 375px;
+        flex-flow: column;
+        align-items: normal;
+        padding: 24px 0 0;
+    }
+
+    .user-profile {
+        width: 335px;
+        margin: auto;
+    }
+
+    .user-contact {
+        width: 335px;
+        height: 54px;
+        margin: 10px auto 24px;
+    }
+
+    .icon.whatsapp, .icon-divider.whatsapp {
+        display: flex;
+    }
+
+    .blog-content {
+        width: 335px;
+        font-size: 16px;
+    }
+
+    .blog-tittle {
+        width: 335px;
+        font-size: 26px;
+    }
+
+    .blog-image {
+        width: 375px;
+        height: 250px;
+    }
+
+    .image-caption {
+        width: 335px;
+        font-size: 13px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .share {
+        width: 335px;
+        margin: auto;
+    }
+
+    .share-title {
+        display: block;
+        font-family: 'SF Pro Text';
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.42px;
+        margin: auto;
+    }
+
+    .share-description {
+        display: none;
+    }
+
+    .user-contact.end-blog {
+        width: 335px;
+        height: 54px;
+    }
+
+    .tags {
+        width: 335px;
+    }
+
+    .user-about {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto 0;
+    }
+
+    .user-profile-image {
+        float: left;
+        width: 70px;
+        height: 70px;
+        margin-right: 16px;
+    }
+
+    .about-content {
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .all-articles.articles-user-page {
+        width: 375px;
+    }
+
+    .article-title {
+        width: 100%;
+    }
+
+    .signup {
+        width: 379px;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 3px solid #000;
+        padding-top: 0;
+        padding-bottom: 32;
+    }
+
+    .signup-title {
+        width: 249px;
+        margin: auto;
+        font-size: 29px;
+    }
+
+    .signup-description {
+        width: 306px;
+        font-size: 16px;
+    }
+
+    .email {
+        width: 100%;
+    }
+}
