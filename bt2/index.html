@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -12,7 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
@@ -20,41 +20,19 @@
         <div class="month">
           <i class="fas fa-angle-left prev"></i>
           <div class="date">
-            <!-- month and year popup -->
-            <div class="month-popup">
-              <div class="month-picker">
-                <select id="month-select">
-                  <option value="0">January</option>
-                  <option value="1">February</option>
-                  <option value="2">March</option>
-                  <option value="3">April</option>
-                  <option value="4">May</option>
-                  <option value="5">June</option>
-                  <option value="6">July</option>
-                  <option value="7">August</option>
-                  <option value="8">September</option>
-                  <option value="9">October</option>
-                  <option value="10">November</option>
-                  <option value="11">December</option>
-                </select>
-                <button class="select-month" onclick="selectMonth()">
-                  Select
-                </button>
-              </div>
-            </div>
-            <div class="year-popup">
-              <div class="year-picker">
-                <input type="number" id="year-input" placeholder="Enter Year" />
-                <button class="select-year" onclick="selectYear()">
-                  Select
-                </button>
-              </div>
-            </div>
-            <!-- calendar content -->
-            <h1></h1>
+            <button id="yearSelector" class="yearButton">Choose Year</button>
+            <h1 id="monthSelector"></h1>
             <p></p>
           </div>
           <i class="fas fa-angle-right next"></i>
+        </div>
+        <div id="yearPopup" class="popup">
+          <div class="popup-function">
+            <span class="close">&times;</span>
+          </div>
+          <div class="popup-content">
+            <ul id="yearList"></ul>
+          </div>
         </div>
         <div class="weekdays">
           <div>Sun</div>
@@ -66,6 +44,26 @@
           <div>Sat</div>
         </div>
         <div class="days"></div>
+      </div>
+    </div>
+
+    <div id="monthPopup" class="popup">
+      <span class="close">&times;</span>
+      <div class="popup-content">
+        <ul id="monthList">
+          <li data-month="0">January</li>
+          <li data-month="1">February</li>
+          <li data-month="2">March</li>
+          <li data-month="3">April</li>
+          <li data-month="4">May</li>
+          <li data-month="5">June</li>
+          <li data-month="6">July</li>
+          <li data-month="7">August</li>
+          <li data-month="8">September</li>
+          <li data-month="9">October</li>
+          <li data-month="10">November</li>
+          <li data-month="11">December</li>
+        </ul>
       </div>
     </div>
 

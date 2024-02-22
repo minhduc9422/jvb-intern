@@ -57,12 +57,14 @@ html {
   color: #cecece;
 }
 
-h1:hover, p:hover {
+h1:hover,
+p:hover,
+button:hover {
   color: #fff;
   cursor: pointer;
 }
 
-.month-popup {
+.popup {
   display: none;
   position: fixed;
   top: 50%;
@@ -74,51 +76,69 @@ h1:hover, p:hover {
   z-index: 2;
 }
 
-.month-picker {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#month-select {
-  font-size: 1.6rem;
-  padding: 8px;
-  margin-right: 8px;
-}
-
-.year-popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+.popup-content {
+  margin: 15% auto;
   padding: 20px;
-  z-index: 2;
-}
-
-.year-picker {
   text-align: center;
+  border: 1px solid #888;
+  max-width: 400px;
 }
 
-#year-input {
-  font-size: 1.6rem;
-  padding: 8px;
-  margin-right: 8px;
+.close {
+  margin: 49px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-button {
-  font-size: 1.6rem;
-  padding: 8px 16px;
-  cursor: pointer;
-  background-color: #4cc2ff;
+.close:hover,
+.close:focus {
   color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#monthList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#monthList li {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+#monthList li:hover {
+  background-color: #f0f0f0;
+}
+
+#yearSelector {
   border: none;
-  border-radius: 4px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  background-color: #19191d;
+}
+
+#yearList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#yearList li {
+  cursor: pointer;
+  padding: 2px 20px;
+  border-bottom: 1px solid #aaa;
+  transition: background-color 0.3s;
+}
+
+#yearList li:last-child {
+  border-bottom: none;
+}
+
+#yearList li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.yearButton {
+  color: #cecece;
 }
 
 .weekdays {
@@ -174,4 +194,3 @@ button {
 .today {
   background-color: #4cc2ff;
 }
-
